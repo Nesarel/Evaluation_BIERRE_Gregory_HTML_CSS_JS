@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1, h3{
+    font-weight: normal;
+}
+
+#image-Presentation{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+#divBurger{
+    align-self: flex-end;
+}
+
+#title{
+    align-self: center;
+    text-align: center;
+}
+
+form{
+    align-self: center;
+}
+
+header img{
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    /* Fais venir les voitures en position impaire de la droite */
+    transform: translateX(400%);
+    transition: transform 1s ease;
+}
+
+.voiture{
+    align-self: center;
+    width: 400px;
+}
+
+/* Permet de selectionner tout les enfants d'un parent ayant une position paire */
+/* Fais venir les voitures en position paire de la gauche */
+article:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+article.show {
+    transform: translateX(0);
+}
+
+#resultSearch{
+    display: flex;
+    justify-content: space-around;
+}
+
+.voiture > p{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.otherIMG{
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.buttonChange{
+    position: absolute;
+    top: 50%;
+    border: none;
+    font-size: 1.5rem;
+    background: rgb(0, 0, 0, .1);
+    padding: 0 .3rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.prev{
+    left: 1rem;
+}
+
+.next{
+    right: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+hr{
+    margin: 20px;
+}
+
+footer p{
+    margin: 5px;
+    font-size: smaller;
+}
+
+footer img{
+    width: 134px;
+    height: 100px;
+}
+
+.burger{
+    color:white;
+    background: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding : 0px 10px 5px 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .voiture{
+        width: 300px;
+    }
+}

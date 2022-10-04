@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!-- onscroll="changeIMG()" -->
+    <header>
+
+        <div id="image-Presentation"> 
+            <div id="divBurger">
+                <button class="burger">&#9776;</button>
+            </div>
+
+            <div id="title">
+                <h1>Bienvenue à bord</h1>
+                <p>location de voiture 24h/24 et 7j/7</p>
+            </div>
+
+            <form action="">
+                <select name="pays">
+                    <option value >Adresse de départ</option>
+                    <option value="France">France</option>
+                    <option value="Angleterre">Angleterre</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Italy">Italy</option>
+                </select>
+                <input type="date" id="date" placeholder="Début de location">
+                <input type="date" id="date" placeholder="Fin de location">
+                <input type="submit" value="Valider ma recherche">
+            </form>
+        </div>
+
+        <img id="carousel" src="img/background0.jpg" alt="">
+        
+    </header>
+
+    <section>
+        <div id="resultSearch">
+            <h2>7 résultats</h2>
+
+            <select name="prix">
+                <option value="Prix décroissant" >Prix croissant</option>
+                <option value="Prix décroissant">Prix décroissant</option>
+            </select>
+        </div>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+            
+                <img src="img/vehicule1_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>Peugeot 208</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+            
+                <img src="img/vehicule2_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>Ford Focus</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+
+                <img src="img/vehicule3_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>Audi A1</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,55/km supplémentaire), 1100€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+
+                <img src="img/vehicule4_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>Opel Mokka</h3>
+                <p>Diesel, 5 portes, GPS , autoradio, forfait 1000 km (0,4/km supplémentaire), 1150€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+
+                <img src="img/vehicule5_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>208 Peugeot</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+
+                <img src="img/vehicule6_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>Focus Ford</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="otherIMG">
+                <button class="buttonChange prev" data-carousel-button="prev">&#8656;</button>
+                <button class="buttonChange next" data-carousel-button="next">&#8658;</button>
+
+                <img src="img/vehicule7_0.png" alt="">
+            </div>
+            <div class="voiture">
+                <h3>A1 Audi</h3>
+                <p>Diesel, 5 portes, GPS, autoradio, forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de Paris</p>
+                <button>Réserver et Payer</button>
+            </div>
+        </article>
+    </section>
+
+    <hr>
+
+    <footer>
+        <img src="./img/agence.jpg" alt="">
+        <div>
+            <p>Notre agence de <b>Paris</b></p>
+            <p>300 boulevard de Vaugirard, 75015 Paris</p>
+            <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contact@vtc.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
